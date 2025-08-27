@@ -9,6 +9,8 @@ import {
 
 import type { Route } from "./+types/root";
 import "./app.css";
+import { ThemeProvider, createTheme } from "@mui/material/styles";
+import CssBaseline from "@mui/material/CssBaseline";
 
 export const links: Route.LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -41,8 +43,34 @@ export function Layout({ children }: { children: React.ReactNode }) {
   );
 }
 
+const normalTheme = createTheme({
+  palette: {
+    primary: {
+      main: "#e60012",
+      contrastText: "#ffffff",
+    },
+    secondary: {
+      main: "#8c8c8c",
+      light: "#b4b4b4",
+      contrastText: "#3c3c3c",
+    },
+  },
+  typography: {
+    fontFamily: ['"Helvetica Neue"', "Arial", "sans-serif"].join(","),
+    fontWeightLight: 400,
+    fontWeightRegular: 500,
+    fontWeightMedium: 600,
+    fontWeightBold: 800,
+  },
+});
+
 export default function App() {
-  return <Outlet />;
+  return (
+    <ThemeProvider theme={normalTheme}>
+      <CssBaseline />
+      <Outlet />
+    </ThemeProvider>
+  );
 }
 
 export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {

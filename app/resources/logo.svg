@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="54.667912mm"
+   height="32.43396mm"
+   viewBox="0 0 54.667912 32.43396"
+   id="SVGRoot"
+   version="1.1"
+   inkscape:version="1.4.2 (ebf0e940, 2025-05-08)"
+   sodipodi:docname="icon.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     inkscape:document-units="mm"
+     inkscape:zoom="2.8284271"
+     inkscape:cx="100.23239"
+     inkscape:cy="73.362329"
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="false"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="false"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:window-width="2000"
+     inkscape:window-height="932"
+     inkscape:window-x="1262"
+     inkscape:window-y="25"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1"
+     showborder="false"
+     borderlayer="false" />
+  <defs
+     id="defs1">
+    <rect
+       x="28.284271"
+       y="41.012192"
+       width="111.01576"
+       height="16.617008"
+       id="rect7" />
+    <rect
+       x="106.41957"
+       y="38.183765"
+       width="38.537319"
+       height="27.930717"
+       id="rect6" />
+    <rect
+       x="34.648232"
+       y="108.89444"
+       width="57.629204"
+       height="27.223612"
+       id="rect5" />
+    <rect
+       x="48.436813"
+       y="118.08683"
+       width="147.07822"
+       height="59.043415"
+       id="rect4" />
+    <rect
+       x="49.497475"
+       y="37.476658"
+       width="165.463"
+       height="77.074638"
+       id="rect2" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="matrix(0.8961953,0,0,0.90094334,-4.2466062,-3.1734883)">
+    <rect
+       style="fill:#e60012;fill-opacity:1;stroke:#e60012;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1"
+       width="60"
+       height="35"
+       x="5.238483"
+       y="4.0224061"
+       rx="1.5"
+       ry="1.5" />
+    <text
+       xml:space="preserve"
+       transform="matrix(1.0789922,0,-0.46899864,2.1631863,15.955099,-247.27029)"
+       id="text4"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.7238px;font-family:Silom;-inkscape-font-specification:'Silom, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect4);display:inline;fill:#ffffff;fill-opacity:0.678431;stroke:#ffffff;stroke-width:0.318328;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"><tspan
+         x="48.4375"
+         y="129.55209"
+         id="tspan2"><tspan
+           style="fill-opacity:1"
+           id="tspan1">ナゲット</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.704px;font-family:Silom;-inkscape-font-specification:'Silom, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;letter-spacing:-1.13429px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.19088;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+       x="3.547488"
+       y="14.791454"
+       id="text9"
+       transform="matrix(0.86248087,-0.33157803,0.28994672,1.0479769,0,0)"><tspan
+         sodipodi:role="line"
+         id="tspan9"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.04951px;font-family:Silom;-inkscape-font-specification:'Silom, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:-1.13429px;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:0.19088;stroke-dasharray:none;stroke-opacity:1"
+         x="3.547488"
+         y="14.791454"
+         dx="0">マイ</tspan></text>
+  </g>
+</svg>
