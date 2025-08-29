@@ -1,0 +1,244 @@
+{
+  "BillionRoad": {
+    "title": "Billion Road",
+    "one_line": "Billion Road: where dice, sushi shops, and mischievous monsters decide if you’re Japan’s next billionaire—or just broke in Akihabara.",
+    "description": "Billion Road is a family-friendly board game-style adventure where players travel across Japan, investing in properties like sushi restaurants and anime shops to become the richest player. Dice rolls, random events, and over 50 quirky monsters shape your fate—sometimes boosting your fortune, other times sabotaging your plans. With more than 30 items to help or hinder rivals, multiple game modes ranging from quick matches to decades-long campaigns, and both local and online multiplayer, the game blends strategy, luck, and chaos into a fun race to billionaire status.",
+    "rating": 8,
+    "players": 1,
+    "online": "PvP",
+    "genre": ["casual", "strategy"],
+    "img_legend": {
+      "01v": "",
+      "01i": "",
+      "02i": "",
+      "03i": "",
+      "Title": ""
+    },
+    "img_comments": {
+      "01v": [
+        "Feels like Monopoly but way crazier lol",
+        "The monsters are pure chaos 😂",
+        "Lowkey learning about money while trolling my friends",
+        "Skirmish mode = instant chaos party",
+        "The map makes me wanna go to Japan fr"
+      ],
+      "01i": [],
+      "02i": [],
+      "03i": [],
+      "Title": []
+    }
+  },
+  "ComixPlay": {
+    "title": "COMIXPLAY",
+    "one_line": "COMIXPLAY: Read it like a comic, play it like a strategy game—save the solar system while your heroes bicker like family.",
+    "description": "COMIXPLAY is a 124-page digital superhero graphic novel blended with turn-based strategy gameplay. You follow the Solar Defenders, a genetically enhanced team tasked with saving the solar system from an alien menace—while also battling their own insecurities and rivalries. As the story unfolds from Pluto to Earth, players can seamlessly switch between reading the comic and engaging in tactical combat. Each hero has unique powers and team-based abilities, making every battle dynamic and story-driven. It’s part comic, part game, and fully immersive.",
+    "rating": 7,
+    "players": 1,
+    "online": "None",
+    "genre": ["visualnovel", "action"],
+    "img_legend": {
+      "01v": "",
+      "01i": "",
+      "02i": "",
+      "03i": "",
+      "Title": ""
+    },
+    "img_comments": {
+      "01v": [
+        "Feels like I’m playing inside a comic book 😍",
+        "The team fights more with each other than the aliens lol",
+        "Turn-based battles + superhero drama = perfect combo",
+        "Love how each hero’s powers link up in fights",
+        "The art makes me wanna keep reading even when I’m not playing"
+      ],
+      "01i": [],
+      "02i": [],
+      "03i": [],
+      "Title": []
+    }
+  },
+  "CursedCompanions": {
+    "title": "",
+    "one_line": "",
+    "description": "",
+    "rating": 7,
+    "players": 1,
+    "online": "",
+    "genre": ["", ""],
+    "img_legend": {
+      "01v": "",
+      "01i": "",
+      "02i": "",
+      "03i": "",
+      "Title": ""
+    },
+    "img_comments": {
+      "01v": ["", "", "", "", ""],
+      "01i": [],
+      "02i": [],
+      "03i": [],
+      "Title": []
+    }
+  },
+  "Deltarune": {
+    "title": "",
+    "one_line": "",
+    "description": "",
+    "rating": 7,
+    "players": 1,
+    "online": "",
+    "genre": ["", ""],
+    "img_legend": {
+      "01v": "",
+      "01i": "",
+      "02i": "",
+      "03i": "",
+      "Title": ""
+    },
+    "img_comments": {
+      "01v": ["", "", "", "", ""],
+      "01i": [],
+      "02i": [],
+      "03i": [],
+      "Title": []
+    }
+  },
+  "FatalFury": {
+    "title": "",
+    "one_line": "",
+    "description": "",
+    "rating": 7,
+    "players": 1,
+    "online": "",
+    "genre": ["", ""],
+    "img_legend": {
+      "01v": "",
+      "01i": "",
+      "02i": "",
+      "03i": "",
+      "Title": ""
+    },
+    "img_comments": {
+      "01v": ["", "", "", "", ""],
+      "01i": [],
+      "02i": [],
+      "03i": [],
+      "Title": []
+    }
+  },
+  "GasPumpSimulator": {
+    "title": "",
+    "one_line": "",
+    "description": "",
+    "rating": 7,
+    "players": 1,
+    "online": "",
+    "genre": ["", ""],
+    "img_legend": {
+      "01v": "",
+      "01i": "",
+      "02i": "",
+      "03i": "",
+      "Title": ""
+    },
+    "img_comments": {
+      "01v": ["", "", "", "", ""],
+      "01i": [],
+      "02i": [],
+      "03i": [],
+      "Title": []
+    }
+  },
+  "HogwartsLegacy": {
+    "title": "",
+    "one_line": "",
+    "description": "",
+    "rating": 7,
+    "players": 1,
+    "online": "",
+    "genre": ["", ""],
+    "img_legend": {
+      "01v": "",
+      "01i": "",
+      "02i": "",
+      "03i": "",
+      "Title": ""
+    },
+    "img_comments": {
+      "01v": ["", "", "", "", ""],
+      "01i": [],
+      "02i": [],
+      "03i": [],
+      "Title": []
+    }
+  },
+  "JapaneseDriftMaster": {
+    "title": "",
+    "one_line": "",
+    "description": "",
+    "rating": 7,
+    "players": 1,
+    "online": "",
+    "genre": ["", ""],
+    "img_legend": {
+      "01v": "",
+      "01i": "",
+      "02i": "",
+      "03i": "",
+      "Title": ""
+    },
+    "img_comments": {
+      "01v": ["", "", "", "", ""],
+      "01i": [],
+      "02i": [],
+      "03i": [],
+      "Title": []
+    }
+  },
+  "Peak": {
+    "title": "",
+    "one_line": "",
+    "description": "",
+    "rating": 7,
+    "players": 1,
+    "online": "",
+    "genre": ["", ""],
+    "img_legend": {
+      "01v": "",
+      "01i": "",
+      "02i": "",
+      "03i": "",
+      "Title": ""
+    },
+    "img_comments": {
+      "01v": ["", "", "", "", ""],
+      "01i": [],
+      "02i": [],
+      "03i": [],
+      "Title": []
+    }
+  },
+  "RogueNight": {
+    "title": "",
+    "one_line": "",
+    "description": "",
+    "rating": 7,
+    "players": 1,
+    "online": "",
+    "genre": ["", ""],
+    "img_legend": {
+      "01v": "",
+      "01i": "",
+      "02i": "",
+      "03i": "",
+      "Title": ""
+    },
+    "img_comments": {
+      "01v": ["", "", "", "", ""],
+      "01i": [],
+      "02i": [],
+      "03i": [],
+      "Title": []
+    }
+  }
+}
