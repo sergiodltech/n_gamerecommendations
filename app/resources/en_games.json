@@ -1,7 +1,7 @@
 {
   "BillionRoad": {
     "title": "Billion Road",
-    "one_line": "Billion Road: where dice, sushi shops, and mischievous monsters decide if you’re Japan’s next billionaire—or just broke in Akihabara.",
+    "one_line": "Billion Road: where dice, sushi shops, and mischievous monsters decide if you're Japan's next billionaire—or just broke in Akihabara.",
     "description": "Billion Road is a family-friendly board game-style adventure where players travel across Japan, investing in properties like sushi restaurants and anime shops to become the richest player. Dice rolls, random events, and over 50 quirky monsters shape your fate—sometimes boosting your fortune, other times sabotaging your plans. With more than 30 items to help or hinder rivals, multiple game modes ranging from quick matches to decades-long campaigns, and both local and online multiplayer, the game blends strategy, luck, and chaos into a fun race to billionaire status.",
     "rating": 8,
     "players": 1,
@@ -31,7 +31,7 @@
   "ComixPlay": {
     "title": "COMIXPLAY",
     "one_line": "COMIXPLAY: Read it like a comic, play it like a strategy game—save the solar system while your heroes bicker like family.",
-    "description": "COMIXPLAY is a 124-page digital superhero graphic novel blended with turn-based strategy gameplay. You follow the Solar Defenders, a genetically enhanced team tasked with saving the solar system from an alien menace—while also battling their own insecurities and rivalries. As the story unfolds from Pluto to Earth, players can seamlessly switch between reading the comic and engaging in tactical combat. Each hero has unique powers and team-based abilities, making every battle dynamic and story-driven. It’s part comic, part game, and fully immersive.",
+    "description": "COMIXPLAY is a 124-page digital superhero graphic novel blended with turn-based strategy gameplay. You follow the Solar Defenders, a genetically enhanced team tasked with saving the solar system from an alien menace—while also battling their own insecurities and rivalries. As the story unfolds from Pluto to Earth, players can seamlessly switch between reading the comic and engaging in tactical combat. Each hero has unique powers and team-based abilities, making every battle dynamic and story-driven. It's part comic, part game, and fully immersive.",
     "rating": 7,
     "players": 1,
     "online": "None",
@@ -45,11 +45,11 @@
     },
     "img_comments": {
       "01v": [
-        "Feels like I’m playing inside a comic book 😍",
+        "Feels like I'm playing inside a comic book 😍",
         "The team fights more with each other than the aliens lol",
         "Turn-based battles + superhero drama = perfect combo",
-        "Love how each hero’s powers link up in fights",
-        "The art makes me wanna keep reading even when I’m not playing"
+        "Love how each hero's powers link up in fights",
+        "The art makes me wanna keep reading even when I'm not playing"
       ],
       "01i": [],
       "02i": [],
@@ -58,13 +58,13 @@
     }
   },
   "CursedCompanions": {
-    "title": "",
-    "one_line": "",
-    "description": "",
-    "rating": 7,
+    "title": "Cursed Companions",
+    "one_line": "Cursed Companions: a horror dungeon crawler where your voice can cast spells, trigger traps, or totally doom your friends.",
+    "description": "Cursed Companions is a co-op horror game where your voice is the key to survival—or disaster. The game listens to everything you and your teammates say: the right words unlock spells, treasures, and traps, while the wrong ones unleash chaos and danger. Explore procedurally generated dungeons filled with monsters, treasures, and secrets in either co-op or versus mode. Every run offers a new challenge, with opportunities to upgrade your home base for future survival. Whether sneaking past threats, working together, or sacrificing teammates, every word counts in this unpredictable voice-activated adventure.",
+    "rating": 8,
     "players": 1,
-    "online": "",
-    "genre": ["", ""],
+    "online": "Co-op",
+    "genre": ["Action", "Adventure"],
     "img_legend": {
       "01v": "",
       "01i": "",
@@ -73,7 +73,13 @@
       "Title": ""
     },
     "img_comments": {
-      "01v": ["", "", "", "", ""],
+      "01v": [
+        "Bro I literally killed the squad by saying the wrong word 😭",
+        "It's like the dungeon is listening… creepy but fun",
+        "Procedural maps keep it fresh every run",
+        "Versus mode = instant betrayal energy lol",
+        "Best/worst part? Your mic is basically a weapon"
+      ],
       "01i": [],
       "02i": [],
       "03i": [],
@@ -81,13 +87,13 @@
     }
   },
   "Deltarune": {
-    "title": "",
-    "one_line": "",
-    "description": "",
-    "rating": 7,
+    "title": "deltarune",
+    "one_line": "Deltarune: a strange journey where unlikely heroes, bullet-dodging battles, and cryptic choices question what it really means to save the world.",
+    "description": "Deltarune is a spiritual follow-up to Undertale, set in a new continuity with familiar faces. You play as Kris, the only human in a monster-filled town, who alongside Susie and Ralsei becomes one of the prophesied \"Delta Warriors.\" Together, you explore mysterious Dark Worlds, face quirky enemies, and uncover deeper questions about fate, choice, and identity. The combat retains Undertale's mix of dodging and pacifism options but expands to a three-member party system with unique roles, abilities, and a new TP mechanic for special actions. It's equal parts heartfelt, funny, and unsettling.",
+    "rating": 10,
     "players": 1,
-    "online": "",
-    "genre": ["", ""],
+    "online": "None",
+    "genre": ["RPG"],
     "img_legend": {
       "01v": "",
       "01i": "",
@@ -96,7 +102,13 @@
       "Title": ""
     },
     "img_comments": {
-      "01v": ["", "", "", "", ""],
+      "01v": [
+        "It's like Undertale's weirder, darker cousin",
+        "Susie went from bully to bestie real quick 🐊",
+        "Dodging bullets while vibing to that soundtrack 🔥",
+        "The whole 'do choices matter?' thing messed with my head",
+        "Ralsei is literally the sweetest goat ever"
+      ],
       "01i": [],
       "02i": [],
       "03i": [],
@@ -104,13 +116,13 @@
     }
   },
   "FatalFury": {
-    "title": "",
-    "one_line": "",
-    "description": "",
-    "rating": 7,
+    "title": "Fatal Fury: City of the Wolves",
+    "one_line": "City of the Wolves: the legendary Fatal Fury returns, packing high-octane battles, stylish fighters, and a REV System that cranks the hype to max.",
+    "description": "Fatal Fury: City of the Wolves revives SNK's iconic fighting series after 26 years with new energy, mechanics, and style. The all-new REV System introduces powerful offensive options that supercharge every match, while two control schemes—Arcade Style for veterans and Smart Style for newcomers—make it accessible to all players. Launching with 22 characters, including series favorites and new faces, each fighter is rendered in a striking art style. Beyond versus play, \"Episodes of South Town\" offers a single-player RPG mode where players level up fighters, earn skills, and carve out their legend in South Town's streets.",
+    "rating": 8,
     "players": 1,
-    "online": "",
-    "genre": ["", ""],
+    "online": "PvP",
+    "genre": ["Action", "Fight"],
     "img_legend": {
       "01v": "",
       "01i": "",
@@ -119,7 +131,13 @@
       "Title": ""
     },
     "img_comments": {
-      "01v": ["", "", "", "", ""],
+      "01v": [
+        "Fatal Fury is back and it looks insane 🔥",
+        "REV System makes every match feel explosive",
+        "Smart Style is perfect for casuals like me lol",
+        "22 characters at launch?? That's stacked",
+        "Episodes of South Town feels like RPG + fighter = win"
+      ],
       "01i": [],
       "02i": [],
       "03i": [],
@@ -127,13 +145,13 @@
     }
   },
   "GasPumpSimulator": {
-    "title": "",
-    "one_line": "",
-    "description": "",
+    "title": "Gas Pump Simulator",
+    "one_line": "Gas Pump Simulator 2024: from broke car-owner to business tycoon, pump by pump, upgrade by upgrade",
+    "description": "Gas Pump Simulator 2024 is a business management sim where you start small and build a thriving gas station empire. Begin with minimal assets, sell your car, and invest in an abandoned pump. Manage fuel supply, satisfy customers, and keep operations running smoothly to earn high ratings and boost growth. Expand with services like tire repair, restrooms, and even a grocery store, while balancing both personal and business life. Upgrade your station, hire staff, and handle daily challenges to maximize profit. Every decision counts on your journey to becoming a successful business tycoon.",
     "rating": 7,
     "players": 1,
-    "online": "",
-    "genre": ["", ""],
+    "online": "Co-op",
+    "genre": ["Simulator", "Casual"],
     "img_legend": {
       "01v": "",
       "01i": "",
@@ -142,7 +160,13 @@
       "Title": ""
     },
     "img_comments": {
-      "01v": ["", "", "", "", ""],
+      "01v": [
+        "Didn't think running a gas station would be this addicting 😂",
+        "Customer ratings actually stress me out more than exams lol",
+        "Upgrading my pump into a mini-mart feels so good",
+        "Peak chaos = 5 cars waiting and no fuel left 😭",
+        "Lowkey learning more about business than in school"
+      ],
       "01i": [],
       "02i": [],
       "03i": [],
@@ -150,13 +174,13 @@
     }
   },
   "HogwartsLegacy": {
-    "title": "",
-    "one_line": "",
-    "description": "",
-    "rating": 7,
+    "title": "Hogwarts Legacy",
+    "one_line": "Hogwarts Legacy: craft your own magical destiny in an open-world wizarding adventure set long before Harry Potter's time.",
+    "description": "Hogwarts Legacy is an open-world action RPG set in the wizarding world of the 1800s. As a Hogwarts student with access to a mysterious ancient secret, you shape your own path in a story that could change the fate of magic forever. Explore iconic locations like Hogwarts, Hogsmeade, and the Forbidden Forest, while mastering spells, brewing potions, and bonding with magical beasts. Forge friendships, choose your house, and grow into the witch or wizard you want to become. With battles against trolls, goblins, and Dark Wizards, the legacy you leave is entirely up to you.",
+    "rating": 9,
     "players": 1,
-    "online": "",
-    "genre": ["", ""],
+    "online": "None",
+    "genre": ["Action", "Adventure", "RPG"],
     "img_legend": {
       "01v": "",
       "01i": "",
@@ -165,7 +189,13 @@
       "Title": ""
     },
     "img_comments": {
-      "01v": ["", "", "", "", ""],
+      "01v": [
+        "Finally living my Hogwarts dream fr 🪄✨",
+        "Flying over the castle on a broom = pure magic",
+        "The combat feels way more badass than I expected",
+        "Sorting hat moment had me sweating more than exams lol",
+        "Exploring the Forbidden Forest at night is terrifying but awesome"
+      ],
       "01i": [],
       "02i": [],
       "03i": [],
@@ -173,13 +203,13 @@
     }
   },
   "JapaneseDriftMaster": {
-    "title": "",
-    "one_line": "",
-    "description": "",
-    "rating": 7,
+    "title": "Japanese Drift Master",
+    "one_line": "JDM: race, drift, and live the tuner dream on Japan's legendary mountain passes and neon-lit city streets.",
+    "description": "JDM is a racing and drifting game set in the heart of Japan's tuner culture. Explore over 250 km of roads across the fictional Guntama prefecture, from tight mountain passes to bustling city streets, with dynamic day-night cycles, traffic, and weather adding realism. Choose from licensed cars by brands like Nissan, Mazda, Honda, and Subaru, then customize and tune them to perfection. Experience a manga-inspired story as a foreigner chasing respect in Japan's drifting scene. With simcade driving physics, narrative-driven events, and plenty of side races, JDM blends authentic car culture with high-speed thrills.",
+    "rating": 8,
     "players": 1,
-    "online": "",
-    "genre": ["", ""],
+    "online": "None",
+    "genre": ["Racing", "Simulation", "Casual"],
     "img_legend": {
       "01v": "",
       "01i": "",
@@ -188,7 +218,13 @@
       "Title": ""
     },
     "img_comments": {
-      "01v": ["", "", "", "", ""],
+      "01v": [
+        "Feels like Initial D but I'm the main character 😎",
+        "Drifting through the mountains at night is pure vibes",
+        "Finally a game where I can rep my Honda and not feel left out",
+        "The weather + neon city streets = chef's kiss",
+        "Story mode lowkey feels like a racing manga come to life"
+      ],
       "01i": [],
       "02i": [],
       "03i": [],
@@ -196,13 +232,13 @@
     }
   },
   "Peak": {
-    "title": "",
-    "one_line": "",
-    "description": "",
-    "rating": 7,
+    "title": "Peak",
+    "one_line": "PEAK: team up, climb hard, and try not to fall—because one wrong move means starting all over again",
+    "description": "PEAK is a co-op climbing survival game from Aggro Crab where every step could be your last. Stranded on a mysterious island, you and up to three friends must scale a mountain that changes every day. Work together by placing ropes, pulling each other up, and sharing supplies while surviving on questionable food and scavenged gear. Each biome brings new hazards, from dangerous terrain to stamina-draining injuries. Earn badges, unlock cosmetics, and roast marshmallows by campfires along the way. Whether solo or with friends, the climb to the top is brutal, hilarious, and endlessly replayable.",
+    "rating": 9,
     "players": 1,
-    "online": "",
-    "genre": ["", ""],
+    "online": "Co-op",
+    "genre": ["Adventure", "Action"],
     "img_legend": {
       "01v": "",
       "01i": "",
@@ -211,7 +247,13 @@
       "Title": ""
     },
     "img_comments": {
-      "01v": ["", "", "", "", ""],
+      "01v": [
+        "One slip and the whole squad's screaming 😂",
+        "Lowkey harder than any Souls game I've played",
+        "Daily new maps keep it fresh every climb",
+        "Best part? Saving (or betraying) your friends with ropes",
+        "Campfire marshmallows after dying 20 times hit different"
+      ],
       "01i": [],
       "02i": [],
       "03i": [],
@@ -219,13 +261,13 @@
     }
   },
   "RogueNight": {
-    "title": "",
-    "one_line": "",
-    "description": "",
+    "title": "Rogue Night",
+    "one_line": "Rogue Night: survive the undead, rescue allies, and grow stronger with every death on your path to face Necrosarian",
+    "description": "Rogue Night is a fantasy survival rogue-lite where danger and undead fill every corner. Gather resources, build shelters, and recruit rescued NPCs who provide aid and companionship. Explore forests, ruins, and puzzle-filled dungeons to uncover blueprints, weapons, potions, and treasures. Each run, you'll battle hordes of undead, harvesting their heads to unlock permanent upgrades that carry into your next attempt. With 3 unique classes, 15 weapons, and over 35 upgrades, you can adapt your character to fit your playstyle. Survive, grow stronger, and fight your way to the final confrontation with Necrosarian himself",
     "rating": 7,
     "players": 1,
-    "online": "",
-    "genre": ["", ""],
+    "online": "None",
+    "genre": ["RPG", "Adventure", "Action"],
     "img_legend": {
       "01v": "",
       "01i": "",
@@ -234,7 +276,13 @@
       "Title": ""
     },
     "img_comments": {
-      "01v": ["", "", "", "", ""],
+      "01v": [
+        "Finally a survival game where dying actually helps lol",
+        "Rescuing NPCs and building a squad feels so good",
+        "Those dungeon puzzles lowkey mess with my brain 🧩",
+        "Every run I get a little stronger, feels addictive af",
+        "Necrosarian better be ready, Im coming for him"
+      ],
       "01i": [],
       "02i": [],
       "03i": [],
