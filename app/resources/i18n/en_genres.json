@@ -1,0 +1,11 @@
+{
+  "Action": "Action",
+  "Adventure": "Adventure",
+  "RPG": "RPG",
+  "Simulator": "Simulator",
+  "Casual": "Casual",
+  "Racing": "Racing",
+  "Strategy": "Strategy",
+  "VisualNovel": "VisualNovel",
+  "Fight": "Fight"
+}

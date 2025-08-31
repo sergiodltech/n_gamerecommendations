@@ -1,7 +1,11 @@
 import Button from "@mui/material/Button";
 import logo from "~/resources/logo.svg";
+import resourcesLoader from "./ResourcesLoader";
+import { Languages } from "./ResourcesLoader";
 
 export function Welcome() {
+  const res = resourcesLoader(Languages.ja);
+  console.log(res);
   return (
     <main className="flex items-center justify-center pt-16 pb-4">
       <div className="flex-1 flex flex-col items-center gap-16 min-h-0">
