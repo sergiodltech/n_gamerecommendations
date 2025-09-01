@@ -22,7 +22,7 @@ export function Showcase() {
         <div className="flex w-full space-y-6 px-4 justify-center">
           <Box sx={{ display: "flex-col", width: 3 / 4 }}>
             <div className="flex-row">{GamesCarousel(carouselResources)}</div>
-            <div className="flex-row mt-10">
+            <div className="flex-row mt-3">
               {GamesGrid(resources, FEATURED_GAMES)}
             </div>
           </Box>
