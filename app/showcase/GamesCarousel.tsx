@@ -5,26 +5,22 @@ import NextIcon from "@mui/icons-material/NavigateNextOutlined";
 import type { GameData } from "./ResourcesLoader";
 
 const GAMES_INTERVAL = 15000; // Interval to proceed to the next game in the carousel, in ms
-const COMMENT_INTERVAL = 4000;
+const COMMENT_SPEED = 40;
+const COMMENT_WS_SEPARATION = 10; // amount of &nbps; elements to separate each commment from each other
 
 const CommentCarousel = (comments: string[]) => {
-  const [currentCmt, setCurrentCmt] = React.useState(0);
-  React.useEffect(() => {
-    const timer = setInterval(
-      () => setCurrentCmt((prevCmt) => (prevCmt + 1) % comments.length),
-      COMMENT_INTERVAL
-    );
-    return () => clearInterval(timer);
-  }, []);
+  const content = [...comments, ...comments].join(
+    "\t".repeat(COMMENT_WS_SEPARATION)
+  );
 
   return (
-    <div
-      className="text-center text-white p-4 md:p-8 max-w-2xl"
-      key={currentCmt}
-    >
-      <h2 className="text-lg justify-center font-bold mb-4 transition-transform durantion-300 ease-out">
-        {comments[currentCmt]}
-      </h2>
+    <div className="w-full overflow-hidden whitespace-pre py-2">
+      <div
+        className="inline-block animate-[marquee_var(--speed,20s)_linear_infinite]"
+        style={{ ["--speed" as any]: `${COMMENT_SPEED}s` }}
+      >
+        <span className="mx-4 text-xl font-big text-white">{content}</span>
+      </div>
     </div>
   );
 };
@@ -54,7 +50,7 @@ const GamesCarousel = (games: GameData[]) => {
                 alt={gameData.media["Title"].legend}
                 className="w-full h-full object-cover"
               />
-              <div className="absolute flex bottom-1 w-full justify-center">
+              <div className="absolute flex bottom-10 w-full justify-center">
                 {CommentCarousel(gameData.media["01v"].comments)}
               </div>
             </div>
