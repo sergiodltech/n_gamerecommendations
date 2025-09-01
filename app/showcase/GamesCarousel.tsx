@@ -2,9 +2,32 @@ import * as React from "react";
 import PrevIcon from "@mui/icons-material/NavigateBeforeOutlined";
 import NextIcon from "@mui/icons-material/NavigateNextOutlined";
 
-import type { GameData, Media } from "./ResourcesLoader";
+import type { GameData } from "./ResourcesLoader";
 
-const NEXT_INTERVAL = 6000; // Interval to proceed to the next game in the carousel, in ms
+const GAMES_INTERVAL = 15000; // Interval to proceed to the next game in the carousel, in ms
+const COMMENT_INTERVAL = 4000;
+
+const CommentCarousel = (comments: string[]) => {
+  const [currentCmt, setCurrentCmt] = React.useState(0);
+  React.useEffect(() => {
+    const timer = setInterval(
+      () => setCurrentCmt((prevCmt) => (prevCmt + 1) % comments.length),
+      COMMENT_INTERVAL
+    );
+    return () => clearInterval(timer);
+  }, []);
+
+  return (
+    <div
+      className="text-center text-white p-4 md:p-8 max-w-2xl"
+      key={currentCmt}
+    >
+      <h2 className="text-lg justify-center font-bold mb-4 transition-transform durantion-300 ease-out">
+        {comments[currentCmt]}
+      </h2>
+    </div>
+  );
+};
 
 const GamesCarousel = (games: GameData[]) => {
   const [currentGame, setCurrentGame] = React.useState(0);
@@ -13,7 +36,7 @@ const GamesCarousel = (games: GameData[]) => {
   const prevGame = () =>
     setCurrentGame((prevGame) => (prevGame - 1 + games.length) % games.length);
   React.useEffect(() => {
-    const timer = setInterval(nextGame, NEXT_INTERVAL);
+    const timer = setInterval(nextGame, GAMES_INTERVAL);
     return () => clearInterval(timer); // on component unmount, clean up the timer
   }, []); // Start at component mount
 
@@ -31,13 +54,9 @@ const GamesCarousel = (games: GameData[]) => {
                 alt={gameData.media["Title"].legend}
                 className="w-full h-full object-cover"
               />
-              {/* <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
-                <div className="text-center text-white p-4 md:p-8 max-w-2xl">
-                  <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                    {gameData.title}
-                  </h2>
-                </div>
-              </div> */}
+              <div className="absolute flex bottom-1 w-full justify-center">
+                {CommentCarousel(gameData.media["01v"].comments)}
+              </div>
             </div>
           </div>
         ))}
