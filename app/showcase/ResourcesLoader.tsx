@@ -49,6 +49,8 @@ export type GameData = {
   media: { [key: string]: Media };
 };
 
+export type Resources = { [key: string]: GameData };
+
 type RawGameData = {
   title: string;
   one_line: string;
@@ -61,8 +63,8 @@ type RawGameData = {
   img_comments: { [key: string]: string[] };
 };
 
-const resourcesLoader = (language: Languages): { [key: string]: GameData } => {
-  var gamesData: { [key: string]: GameData } = {};
+const resourcesLoader = (language: Languages): Resources => {
+  var gamesData: Resources = {};
   const extensionMap: { [key: string]: string } = {
     i: ".jpg",
     v: ".mp4",
@@ -94,7 +96,7 @@ const resourcesLoader = (language: Languages): { [key: string]: GameData } => {
     const gameRawData = _gamesRawData[game];
     const onlineGameplayText = _onlineGameplays[gameRawData.online];
     const onlineGameplay: OnlineGameplay =
-      OnlineGameplay[onlineGameplayText as keyof typeof OnlineGameplay];
+      OnlineGameplay[gameRawData.online as keyof typeof OnlineGameplay];
     const genres: [Genres, string][] = gameRawData.genre.map((genre) => [
       Genres[genre as keyof typeof Genres],
       _genres[genre],
