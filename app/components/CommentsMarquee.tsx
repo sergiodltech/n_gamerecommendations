@@ -2,7 +2,7 @@ const COMMENT_SPEED = 40;
 const COMMENT_WS_SEPARATION = 10; // amount of &nbps; elements to separate each commment from each other
 
 const CommentsMarquee = (comments: string[]) => {
-  const content = [...comments, ...comments].join(
+  const content = ["", "", "", ...comments, ...comments].join(
     "\t".repeat(COMMENT_WS_SEPARATION)
   );
 

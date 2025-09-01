@@ -26,6 +26,18 @@ export enum Genres {
   Fight,
 }
 
+export const GenresColors = {
+  Action: "crimson",
+  Adventure: "forestgreen",
+  RPG: "indigo",
+  Simulator: "slategray",
+  Casual: "deepskyblue",
+  Racing: "orange",
+  Strategy: "darkslateblue",
+  VisualNovel: "hotpink",
+  Fight: "firebrick",
+};
+
 export enum Languages {
   en = "en",
   es = "es",
