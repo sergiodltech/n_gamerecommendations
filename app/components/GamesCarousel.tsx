@@ -2,28 +2,10 @@ import * as React from "react";
 import PrevIcon from "@mui/icons-material/NavigateBeforeOutlined";
 import NextIcon from "@mui/icons-material/NavigateNextOutlined";
 
+import CommentsMarquee from "./CommentsMarquee";
 import type { GameData } from "./ResourcesLoader";
 
 const GAMES_INTERVAL = 15000; // Interval to proceed to the next game in the carousel, in ms
-const COMMENT_SPEED = 40;
-const COMMENT_WS_SEPARATION = 10; // amount of &nbps; elements to separate each commment from each other
-
-const CommentCarousel = (comments: string[]) => {
-  const content = [...comments, ...comments].join(
-    "\t".repeat(COMMENT_WS_SEPARATION)
-  );
-
-  return (
-    <div className="w-full overflow-hidden whitespace-pre py-2">
-      <div
-        className="inline-block animate-[marquee_var(--speed,20s)_linear_infinite]"
-        style={{ ["--speed" as any]: `${COMMENT_SPEED}s` }}
-      >
-        <span className="mx-4 text-xl font-big text-white">{content}</span>
-      </div>
-    </div>
-  );
-};
 
 const GamesCarousel = (games: GameData[]) => {
   const [currentGame, setCurrentGame] = React.useState(0);
@@ -44,14 +26,14 @@ const GamesCarousel = (games: GameData[]) => {
       >
         {games.map((gameData, gameIdx, _) => (
           <div key={gameIdx} className="w-full flex-shrink-0">
-            <div className="relative h-[60vh] md:h-[70vh] lg:h-[80vh]">
+            <div className="relative h-[40vh] md:h-[50vh] lg:h-[60vh]">
               <img
                 src={gameData.media["Title"].uri}
                 alt={gameData.media["Title"].legend}
                 className="w-full h-full object-cover"
               />
               <div className="absolute flex bottom-10 w-full justify-center">
-                {CommentCarousel(gameData.media["01v"].comments)}
+                {CommentsMarquee(gameData.media["01v"].comments)}
               </div>
             </div>
           </div>

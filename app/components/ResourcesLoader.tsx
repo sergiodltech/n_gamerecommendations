@@ -105,7 +105,7 @@ const resourcesLoader = (language: Languages): Resources => {
     Object.keys(gameRawData.img_legend).forEach((imageID) => {
       const ext = extensionMap[imageID.slice(-1)];
       media[imageID] = {
-        uri: `media/${game}${imageID}${ext}`,
+        uri: `/media/${game}${imageID}${ext}`,
         legend: gameRawData.img_legend[imageID],
         comments: gameRawData.img_comments[imageID],
       };
