@@ -13,12 +13,17 @@ const GamesGrid = (games: Resources, featured: string[]) => {
           {Object.keys(games).map((gameKey) => (
             <div
               key={gameKey}
-              className="flex h-[8rem] items-center shadow-md shadow-gray-600 rounded-lg overflow-hidden"
+              className="relative flex h-[8rem] items-center shadow-md shadow-gray-600 rounded-lg overflow-hidden"
             >
               <img
                 src={games[gameKey].media["01i"].uri}
                 alt={games[gameKey].title}
-                className="rounded-md duration-200 hover:scale-105 object-cover"
+                className="rounded-md duration-200 hover:scale-105 top-0 left-0 w-full h-full object-cover"
+              />
+              <img
+                src={games[gameKey].media["01a"].uri}
+                alt={`${games[gameKey].title}-animation`}
+                className="absolute top-0 left-0 w-full h-full object-cover opacity-0 hover:opacity-100 transition-opacity duration-300"
               />
             </div>
           ))}
