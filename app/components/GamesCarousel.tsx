@@ -3,11 +3,15 @@ import PrevIcon from "@mui/icons-material/NavigateBeforeOutlined";
 import NextIcon from "@mui/icons-material/NavigateNextOutlined";
 
 import CommentsMarquee from "./CommentsMarquee";
+import GameDetails from "./GameDetails";
 import type { GameData } from "./ResourcesLoader";
 
 const GAMES_INTERVAL = 15000; // Interval to proceed to the next game in the carousel, in ms
 
-const GamesCarousel = (games: GameData[]) => {
+const GamesCarousel = (
+  games: GameData[],
+  translationStrings: { [key: string]: string }
+) => {
   const [currentGame, setCurrentGame] = React.useState(0);
   const nextGame = () =>
     setCurrentGame((prevGame) => (prevGame + 1) % games.length);
@@ -18,6 +22,20 @@ const GamesCarousel = (games: GameData[]) => {
     return () => clearInterval(timer); // on component unmount, clean up the timer
   }, []); // Start at component mount
 
+  var gamesInitStates: { [key: number]: boolean } = {};
+  games.forEach((_, idx) => {
+    gamesInitStates[idx] = false;
+  });
+  const [detailsState, detailsSetState] = React.useState<{
+    [key: number]: boolean;
+  }>(gamesInitStates);
+  const openDetails = (gameIdx: number) => {
+    detailsSetState((prev) => ({ ...prev, [gameIdx]: true }));
+  };
+  const closeDetails = (gameIdx: number) => {
+    detailsSetState((prev) => ({ ...prev, [gameIdx]: false }));
+  };
+
   return (
     <div className="relative rounded-2xl shadow-md shadow-gray-600 overflow-hidden">
       <div
@@ -26,7 +44,10 @@ const GamesCarousel = (games: GameData[]) => {
       >
         {games.map((gameData, gameIdx, _) => (
           <div key={gameIdx} className="w-full flex-shrink-0">
-            <div className="relative h-[40vh] md:h-[50vh] lg:h-[60vh]">
+            <div
+              className="relative h-[40vh] md:h-[50vh] lg:h-[60vh]"
+              onClick={() => openDetails(gameIdx)}
+            >
               <img
                 src={gameData.media["Title"].uri}
                 alt={gameData.media["Title"].legend}
@@ -36,6 +57,13 @@ const GamesCarousel = (games: GameData[]) => {
                 {CommentsMarquee(gameData.media["01v"].comments)}
               </div>
             </div>
+            <GameDetails
+              gameKey={gameIdx.toString()}
+              gameData={gameData}
+              translationStrings={translationStrings}
+              open={detailsState[gameIdx]}
+              onClose={() => closeDetails(gameIdx)}
+            />
           </div>
         ))}
       </div>

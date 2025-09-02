@@ -13,13 +13,18 @@ import GamesGrid from "~/components/GamesGrid";
 const FEATURED_GAMES = ["Peak", "HogwartsLegacy", "FatalFury", "BillionRoad"];
 
 export function Showcase() {
-  const [language, setLanguage] = React.useState(Languages.en);
+  const [language, setLanguage] = React.useState(Languages.ja);
   const resources = resourcesLoader(language);
   const carouselResources = FEATURED_GAMES.map((gameKey) =>
     (resources[gameKey] as GameData).title === undefined
       ? null
       : (resources[gameKey] as GameData)
   ).filter((x) => !!x);
+  const translationStrings: { [key: string]: string } = {};
+  translationStrings["Online"] =
+    typeof resources["Online"] === "string" ? resources["Online"] : "Online";
+  translationStrings["Players"] =
+    typeof resources["Players"] === "string" ? resources["Players"] : "Players";
   return (
     <main className="flex items-center justify-center">
       <div className="flex-1 flex flex-col items-center gap-16 min-h-0">
@@ -60,7 +65,7 @@ export function Showcase() {
               </Typography>
             </div>
             <div className="flex flex-row">
-              {GamesCarousel(carouselResources)}
+              {GamesCarousel(carouselResources, translationStrings)}
             </div>
             <div className="flex flex-row">
               {GamesGrid(resources, FEATURED_GAMES)}
