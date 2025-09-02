@@ -26,7 +26,7 @@ export enum Genres {
   Fight,
 }
 
-export const GenresColors = {
+export const GenresColors: { [key: string]: string } = {
   Action: "crimson",
   Adventure: "forestgreen",
   RPG: "indigo",

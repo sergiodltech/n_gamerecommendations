@@ -5,7 +5,7 @@ import DialogContent from "@mui/material/DialogContent";
 import DialogContentText from "@mui/material/DialogContentText";
 
 import CommentsMarquee from "./CommentsMarquee";
-import type { GameData } from "./ResourcesLoader";
+import { Genres, GenresColors, type GameData } from "./ResourcesLoader";
 
 interface IGameDetailsProps {
   gameKey: string;
@@ -45,15 +45,19 @@ const GameDetails = ({
               {gameData.oneLine}
             </DialogContentText>
           </div>
-          <div className="flex-row m-5">
-            {gameData.genres.map((genre, idx) => (
-              <div
-                className="inline-block bg-black rounded-corners text-white px-4 mx-4 py-1"
-                key={idx}
-              >
-                {genre[1]}
-              </div>
-            ))}
+          <div className="flex-row justify-center mx-auto m-5">
+            {gameData.genres.map((genre, idx) => {
+              const genreColorKey: string = Genres[genre[0]];
+              return (
+                <div
+                  className="inline-block rounded-2xl text-white px-4 mx-4 py-1"
+                  style={{ backgroundColor: GenresColors[genreColorKey] }}
+                  key={idx}
+                >
+                  {genre[1]}
+                </div>
+              );
+            })}
           </div>
           <div className="flex-row">
             <DialogContentText id="game-description">
