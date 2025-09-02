@@ -9,7 +9,7 @@ import GamesGrid from "~/components/GamesGrid";
 const FEATURED_GAMES = ["Peak", "HogwartsLegacy", "FatalFury", "BillionRoad"];
 
 export function Showcase() {
-  const resources = resourcesLoader(Languages.en);
+  const resources = resourcesLoader(Languages.ja);
   const carouselResources = FEATURED_GAMES.map((gameKey) => resources[gameKey]);
   return (
     <main className="flex items-center justify-center pt-16 pb-4">

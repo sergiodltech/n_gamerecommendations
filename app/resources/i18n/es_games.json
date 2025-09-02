@@ -9,9 +9,9 @@
     "genre": ["Casual", "Strategy"],
     "img_legend": {
       "01v": "",
-      "01i": "",
-      "02i": "",
-      "03i": "",
+      "01i": "Explora!",
+      "02i": "Pelea!",
+      "03i": "Coopera!",
       "01a": "",
       "Title": ""
     },
@@ -40,9 +40,9 @@
     "genre": ["VisualNovel", "Action"],
     "img_legend": {
       "01v": "",
-      "01i": "",
-      "02i": "",
-      "03i": "",
+      "01i": "Pelea por turnos!",
+      "02i": "Monstruos épicos!",
+      "03i": "Como los cómics!",
       "01a": "",
       "Title": ""
     },
@@ -71,9 +71,9 @@
     "genre": ["Action", "Adventure"],
     "img_legend": {
       "01v": "",
-      "01i": "",
-      "02i": "",
-      "03i": "",
+      "01i": "Uuuyy!",
+      "02i": "Cuidado!",
+      "03i": "Una aventura!",
       "01a": "",
       "Title": ""
     },
@@ -102,9 +102,9 @@
     "genre": ["RPG"],
     "img_legend": {
       "01v": "",
-      "01i": "",
-      "02i": "",
-      "03i": "",
+      "01i": "RPG!",
+      "02i": "Simple pero rápido!",
+      "03i": "Muchos juegos!",
       "01a": "",
       "Title": ""
     },
@@ -133,9 +133,9 @@
     "genre": ["Action", "Fight"],
     "img_legend": {
       "01v": "",
-      "01i": "",
-      "02i": "",
-      "03i": "",
+      "01i": "Se ve genial!",
+      "02i": "Combos largos!",
+      "03i": "Ese arte!",
       "01a": "",
       "Title": ""
     },
@@ -164,9 +164,9 @@
     "genre": ["Simulator", "Casual"],
     "img_legend": {
       "01v": "",
-      "01i": "",
-      "02i": "",
-      "03i": "",
+      "01i": "Wooow!",
+      "02i": "Lava autos!",
+      "03i": "Ooh no!",
       "01a": "",
       "Title": ""
     },
@@ -195,9 +195,9 @@
     "genre": ["Action", "Adventure", "RPG"],
     "img_legend": {
       "01v": "",
-      "01i": "",
-      "02i": "",
-      "03i": "",
+      "01i": "Dragón!",
+      "02i": "Tanto detalle!",
+      "03i": "Es mi varita!",
       "01a": "",
       "Title": ""
     },
@@ -226,9 +226,9 @@
     "genre": ["Racing", "Simulator", "Casual"],
     "img_legend": {
       "01v": "",
-      "01i": "",
-      "02i": "",
-      "03i": "",
+      "01i": "Hora de correr!",
+      "02i": "Como un manga!",
+      "03i": "Drifting!",
       "01a": "",
       "Title": ""
     },
@@ -257,9 +257,9 @@
     "genre": ["Adventure", "Action"],
     "img_legend": {
       "01v": "",
-      "01i": "",
-      "02i": "",
-      "03i": "",
+      "01i": "Espacioso!",
+      "02i": "Campamentos!",
+      "03i": "Que miedo!",
       "01a": "",
       "Title": ""
     },
@@ -288,9 +288,9 @@
     "genre": ["RPG", "Adventure", "Action"],
     "img_legend": {
       "01v": "",
-      "01i": "",
-      "02i": "",
-      "03i": "",
+      "01i": "Clásico RPG!",
+      "02i": "Cuevas largas!",
+      "03i": "Buena historia!",
       "01a": "",
       "Title": ""
     },

@@ -6,6 +6,7 @@ import DialogContentText from "@mui/material/DialogContentText";
 
 import CommentsMarquee from "./CommentsMarquee";
 import { Genres, GenresColors, type GameData } from "./ResourcesLoader";
+import ScreenshotFrame from "./ScreenshotFrame";
 
 interface IGameDetailsProps {
   gameKey: string;
@@ -21,6 +22,8 @@ const GameDetails = ({
   onClose,
 }: IGameDetailsProps) => {
   const _onClose = (_e: {}, _r: string) => onClose();
+  const onlinePlay = `Online: ${gameData.online[1]}`;
+  const players = `Players: ${gameData.players}`;
   return (
     <Dialog
       id={`${gameKey}-details`}
@@ -29,14 +32,25 @@ const GameDetails = ({
       aria-labelledby="game-title"
       aria-describedby="game-description"
     >
-      <DialogTitle id="game-title">{gameData.title}</DialogTitle>
+      <DialogTitle id="game-title">
+        <div className="flex justify-between items-center">
+          <span className="text-bold">{gameData.title}</span>
+          <span className="text-xs text-gray-600">
+            {`${onlinePlay} | `}
+            <span className="text-sm text-gray-800 text-bold">
+              {gameData.rating}
+            </span>
+            {`/10 | ${players}`}
+          </span>
+        </div>
+      </DialogTitle>
       <DialogContent>
         <Box className="flex flex-col">
           <div className="relative flex-row mb-4">
             <video autoPlay loop muted className="w-full h-auto rounded-md">
               <source src={gameData.media["01v"].uri} type="video/mp4" />
             </video>
-            <div className="absolute flex bottom-10 w-full justify-center">
+            <div className="absolute flex top-10 w-full justify-center">
               {CommentsMarquee(gameData.media["01v"].comments)}
             </div>
           </div>
@@ -63,6 +77,13 @@ const GameDetails = ({
             <DialogContentText id="game-description">
               {gameData.description}
             </DialogContentText>
+          </div>
+          <div className="flex-row">
+            {Object.keys(gameData.media).map((mediaKey) => {
+              if (mediaKey.endsWith("i")) {
+                return ScreenshotFrame(mediaKey, gameData.media[mediaKey]);
+              }
+            })}
           </div>
         </Box>
       </DialogContent>

@@ -29,6 +29,7 @@ const GamesGrid = (games: Resources, featured: string[]) => {
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 sm:px-5">
           {Object.keys(games).map((gameKey) => {
             const highlight = featured.includes(gameKey) ? "flame-border" : "";
+            const gameData = games[gameKey];
             return (
               <>
                 <div
@@ -37,19 +38,19 @@ const GamesGrid = (games: Resources, featured: string[]) => {
                   onClick={() => openDetails(gameKey)}
                 >
                   <img
-                    src={games[gameKey].media["Title"].uri}
-                    alt={games[gameKey].title}
+                    src={gameData.media["Title"].uri}
+                    alt={gameData.title}
                     className="rounded-md duration-200 hover:scale-105 top-0 left-0 w-full h-full object-cover"
                   />
                   <img
-                    src={games[gameKey].media["01a"].uri}
-                    alt={`${games[gameKey].title}-animation`}
+                    src={gameData.media["01a"].uri}
+                    alt={`${gameData.title}-animation`}
                     className="absolute top-0 left-0 w-full h-full object-cover opacity-0 hover:opacity-100 transition-opacity duration-300"
                   />
                 </div>
                 <GameDetails
                   gameKey={gameKey}
-                  gameData={games[gameKey]}
+                  gameData={gameData}
                   open={state[gameKey]}
                   onClose={() => closeDetails(gameKey)}
                 />
