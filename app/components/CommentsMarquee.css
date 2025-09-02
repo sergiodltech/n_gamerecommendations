@@ -1,0 +1,8 @@
+.comments-marquee-text {
+  color: white;
+  text-shadow:
+    3px 3px 4px #222,
+    -3px -3px 4px #222,
+    3px -3px 4px #222,
+    -3px 3px 4px #222;
+}
