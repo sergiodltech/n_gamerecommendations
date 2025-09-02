@@ -1,6 +1,7 @@
 {
   "name": "n_gamerecommendations",
   "private": true,
+  "homepage": "https://sergiodltech.github.io/n_gamerecommendations/",
   "type": "module",
   "scripts": {
     "build": "react-router build",
