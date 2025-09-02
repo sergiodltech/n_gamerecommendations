@@ -19,7 +19,7 @@ const GamesCarousel = (games: GameData[]) => {
   }, []); // Start at component mount
 
   return (
-    <div className="relative overflow-hidden">
+    <div className="relative rounded-2xl shadow-md shadow-gray-600 overflow-hidden">
       <div
         className="flex transition-transform duration-600 ease-out"
         style={{ transform: `translateX(-${currentGame * 100}%)` }}

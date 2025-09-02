@@ -1,0 +1,6 @@
+.selected-language {
+  background-color: #e0e0e096;
+  border: 2px solid darkslategray;
+  border-radius: 5px;
+  padding: 0 0.5rem;
+}

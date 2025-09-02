@@ -1,12 +1,15 @@
 import enGames from "~/resources/i18n/en_games.json";
 import enGenres from "~/resources/i18n/en_genres.json";
 import enOnline from "~/resources/i18n/en_online.json";
+import enStrings from "~/resources/i18n/en_strings.json";
 import esGames from "~/resources/i18n/es_games.json";
 import esGenres from "~/resources/i18n/es_genres.json";
 import esOnline from "~/resources/i18n/es_online.json";
+import esStrings from "~/resources/i18n/es_strings.json";
 import jaGames from "~/resources/i18n/ja_games.json";
 import jaGenres from "~/resources/i18n/ja_genres.json";
 import jaOnline from "~/resources/i18n/ja_online.json";
+import jaStrings from "~/resources/i18n/ja_strings.json";
 
 export enum OnlineGameplay {
   None,
@@ -61,7 +64,7 @@ export type GameData = {
   media: { [key: string]: Media };
 };
 
-export type Resources = { [key: string]: GameData };
+export type Resources = { [key: string]: GameData | string };
 
 type RawGameData = {
   title: string;
@@ -76,7 +79,7 @@ type RawGameData = {
 };
 
 const resourcesLoader = (language: Languages): Resources => {
-  var gamesData: Resources = {};
+  var resources: Resources = {};
   const extensionMap: { [key: string]: string } = {
     i: ".jpg",
     v: ".mp4",
@@ -91,16 +94,19 @@ const resourcesLoader = (language: Languages): Resources => {
       _gamesRawData = enGames;
       _genres = enGenres;
       _onlineGameplays = enOnline;
+      resources = enStrings;
       break;
     case Languages.es:
       _gamesRawData = esGames;
       _genres = esGenres;
       _onlineGameplays = esOnline;
+      resources = esStrings;
       break;
     case Languages.ja:
       _gamesRawData = jaGames;
       _genres = jaGenres;
       _onlineGameplays = jaOnline;
+      resources = jaStrings;
       break;
   }
 
@@ -123,7 +129,7 @@ const resourcesLoader = (language: Languages): Resources => {
       };
     });
 
-    gamesData[game] = {
+    resources[game] = {
       title: _gamesRawData[game].title,
       oneLine: _gamesRawData[game].one_line,
       description: _gamesRawData[game].description,
@@ -135,7 +141,7 @@ const resourcesLoader = (language: Languages): Resources => {
     };
   });
 
-  return gamesData;
+  return resources;
 };
 
 export default resourcesLoader;

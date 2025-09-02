@@ -11,6 +11,7 @@ import ScreenshotFrame from "./ScreenshotFrame";
 interface IGameDetailsProps {
   gameKey: string;
   gameData: GameData;
+  translationStrings: { [key: string]: string };
   open: boolean;
   onClose: Function;
 }
@@ -18,12 +19,13 @@ interface IGameDetailsProps {
 const GameDetails = ({
   gameKey,
   gameData,
+  translationStrings,
   open,
   onClose,
 }: IGameDetailsProps) => {
   const _onClose = (_e: {}, _r: string) => onClose();
-  const onlinePlay = `Online: ${gameData.online[1]}`;
-  const players = `Players: ${gameData.players}`;
+  const onlinePlay = `${translationStrings["Online"]}: ${gameData.online[1]}`;
+  const players = `${translationStrings["Players"]}: ${gameData.players}`;
   return (
     <Dialog
       id={`${gameKey}-details`}
